@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animals</title>
+  </head>
+  <body>
+    <h1>Animals</h1>
+    <%for(let i in animals){%>
+      <p>
+        <a href="/animals/<%=animals[i]._id%>"><%=animals[i].name%> has <%=animals[i].legs%> legs</a>
+        <a href="/animals/edit/<%=animals[i]._id%>">Edit</a>
+        <a href="/animals/delete/<%=animals[i]._id%>">Delete</a>
+      </p>
+    <%}%>
+  </body>
+</html>
